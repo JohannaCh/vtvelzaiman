@@ -1,0 +1,346 @@
+:root{
+    --fuente:'Work Sans', sans-serif;
+
+    --primario: #0F2028;
+    --secundario: #EAE40A;
+    --complemento: #ffffff;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuente);
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+/* GLOBALES */
+.contenedor{
+    max-width: 100rem;
+    width: 90%;
+    margin: 0rem auto;
+    
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 2rem;
+    margin: 0rem;
+    
+}
+
+h1{
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*UTILIDADES*/
+.no-margin{
+    margin: 0rem;
+}
+.no-padding{
+    padding: 0rem;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+
+/*NAVEGACION*/
+
+.navegacion__enlace{
+    color: var(--complemento);
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+.navegacion__enlace:hover{
+    color: var(--secundario);
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+.navegacion{
+    display: flex;
+    background-color: var(--primario);
+    padding: 1rem 0;
+    
+}
+
+.banner{
+    background-image: url(../img/portada.jpeg);
+    height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner__principal{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 3rem;
+}
+
+.boton a{
+    color: var(--primario);
+    text-align: center;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: var(--secundario);
+    border-radius: 0.3rem;
+}
+.boton a:hover{
+    color: var(--complemento);
+    text-align: center;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: var(--primario);
+    border-radius: 0.3rem;
+}
+
+.boton{
+    margin-top: 1rem; /*18 rem*/
+    align-items: center;
+    padding-top: 4rem;
+ }
+
+.info__feriados{
+    color:  var(--complemento);
+    background-color: var(--primario);
+    border-radius: .5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .5rem 1rem;
+    margin-top: 13rem;
+    font-weight: 600;
+}
+
+/*CONTACTO*/
+.contacto h1{
+    color: var(--complemento);
+}
+.contacto{
+    padding: 2rem 0rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.contacto__grupo__ind{
+    display: flex;
+    align-items: center;
+}
+
+.contacto__grupo__icono{
+    width: 25px;
+    height: auto;
+}
+.contacto__grupo p{
+    color: var(--complemento);
+    padding: 0rem 1rem;
+
+}
+.modificador--sabado{
+    padding-top: 1rem;
+}
+
+
+/*MEDIOS DE PAGO*/
+
+.pagos__medios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5rem;
+}
+
+.seccion__pagos{
+    background-color: var(--primario);
+}
+
+.pagos__titulo{
+    padding-top: 3rem;
+    color: var(--complemento);
+}
+.pagos__texto{
+    color: var(--complemento);
+}
+
+
+.ubicacion{
+    padding: 5rem 0rem;
+    text-align: center;
+    width: 33rem;
+
+}
+.ubicacion__texto{
+    padding: 0rem 3rem;
+}
+.ubicacion__texto h1{
+    text-align: center;
+}
+.mapa{
+    width: 100%;
+    height: 100%;
+}
+.contenedor__mapa{
+    height: 35rem;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: var(--primario);
+    text-align: center;
+    padding: 0.5rem 0rem;
+}
+.footer p{
+    color: var(--complemento);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+
+.desarrollo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+}
+.desarrollo a{
+    color: var(--secundario);
+    text-transform: capitalize;
+    padding: 0rem 0.5rem;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 411px){
+    .boton{
+        margin-top: 1rem; /*18rem*/
+        align-items: center;
+        padding-top: 3rem;
+     }
+    .contacto__grupo__ind{
+    padding: 0.5rem 0rem;
+    }  
+}
+
+@media (max-width: 768px){
+    .main__contacto{
+        background-color: var(--primario);
+    }
+    .contacto__iconoytex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__grupo__ind{
+        padding: 0.5rem 0rem;
+    } 
+    
+ 
+}
+
+@media (min-width: 769px){
+    .navegacion__div{
+        padding-left: 80rem;
+    }
+
+    /*BANNER PRINCIPAL*/
+    .boton{
+        margin-top: 1rem; /*10rem*/
+        align-items: center;
+        padding-top: 1rem; /*6rem*/
+    }
+
+    /*CONTACTO*/
+     .contacto{
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 5rem;
+    }
+
+    .contacto__grupo h1{
+        color: var(--complemento);
+
+    }
+    .contacto__grupo p{
+        font-size: 2.3rem;
+        color: var(--complemento);
+        padding: 0rem 1rem;
+
+    }
+    .contacto--modificador p{
+        padding: 0.8rem;
+    }
+    .main__contacto{
+        background-image: url(../img/fondo.png);
+        height: 36rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .modificador--sabado{
+        padding-top: 1rem;
+    }
+    .banner__publicidad{
+        display: flex;
+        justify-content: center;
+        padding: 5rem 0rem;
+    }
+    .pagos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 2rem;
+    }
+    .modificador--debito{
+        padding-left: 25rem;
+    }
+    .modificador--efectivo{
+        padding-right: 25rem;
+    }
+    .imagenes_zaiman{
+        padding: 5rem 0rem 1rem 0rem;
+    }
+    .imagenes__zaiman__grupo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenes__zaiman__grupo img{
+        width: 45rem;
+        height: auto;
+    }
+
+    .ubicacion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 45rem;
+        width: 90rem;
+    }
+    
+
+}
